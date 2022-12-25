@@ -169,6 +169,12 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
   .sec-onboarding {
     .steps {
       flex-direction: column;
