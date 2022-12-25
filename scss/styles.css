@@ -255,28 +255,54 @@ body {
   font-size: 1rem;
 }
 
-@media (max-width: 420px) {
-  .features {
-    background-color: red;
-    flex-direction: column;
+@media (max-width: 767px){
+  .desktop{
+    display: none;
   }
-  .sec-onboarding .steps {
-    flex-direction: column;
+  .tablet{
+    display: none;
   }
-  .sec-onboarding .steps .icon-desc .title {
-    text-align: center;
+  .sec-onboarding {
+    .steps {
+      flex-direction: column;
+      .icon-desc {
+        .title {
+          text-align: center;
+        }
+      }
+    }
   }
   .sec-footer-cta {
     background-image: none;
+    .footer-cta {
+      width: 100%;
+      text-align: center;
+    }
   }
-  .sec-footer-cta .footer-cta {
-    width: 100%;
-    text-align: center;
+  .sec-benefits {
+    .intro {
+      text-align: center;
+    }
+    .intro h3 {
+      font-size: 2rem;
+    }
   }
-  .sec-benefits .intro {
-    text-align: center;
+}
+/*Seccion tablet*/
+@media (min-width: 768px) and (max-width: 990px){
+  .movil{
+    display: none;
   }
-  .sec-benefits .intro h3 {
-    font-size: 2rem;
+  .desktop{
+    display: none;
+  }
+}
+/*Seccion Desktop*/
+@media (min-width: 991px){
+  .movil{
+    display: none;
+  }
+  .tablet{
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
